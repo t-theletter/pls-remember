@@ -1,0 +1,108 @@
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 100%; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "top-canvas"
+    "bottom-canvas"; 
+}
+
+.whitespace { grid-area: whitespace; }
+.whitespace2 { grid-area: whitespace2; }
+
+.top-canvas {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  justify-self: center; 
+  align-self: center; 
+  width: 100%; 
+  height: 100%; 
+}
+
+.bottom-canvas {
+  position: absolute;
+  top: 50%; 
+  left: 15%;
+  justify-self: center; 
+  align-self: start; 
+  grid-area: bottom-canvas; 
+  width: 100%; 
+}
+
+.dagger{
+  border-radius: 50%;
+  height: 120px;
+  width: auto;
+  padding-right: 0.5%;
+  padding-bottom: 0.5%;
+  z-index: 100;
+}
+
+canvas {
+  transform: translate(-50%);
+  height: 150px;
+  width: auto;
+}
+
+/* input[type="checkbox"] {
+  -webkit-appearance: none;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  /* display: block;
+  /* background-color: white; */
+/*transition:background-color 1s;
+}
+input[type="checkbox"]:checked {
+  background-color: white;
+  /* transition: background-color 1s; 
+}
+input[type="checkbox"]:checked ~ .pgii {
+  display: block;
+}
+input[type="checkbox"]:checked ~ .main-page {
+  display: none;
+}
+input [type="checkbox"]:checked ~ .hiddenTxt {
+  display: block;
+}
+ */
+
+.words {
+  position: absolute;
+  color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 50px; 
+}
+
+.pgii {
+  opacity: 100%;
+  overflow: hidden;
+}
+
+/* h2 {
+  font-style: italic;
+} */

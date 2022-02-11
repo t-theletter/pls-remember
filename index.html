@@ -1,38 +1,53 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>please remember me</title>
-    
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="//unpkg.com/d3"></script>
-    <script src="//unpkg.com/globe.gl"></script>
-    <script src="/script.js" defer></script>
-    <script src="/style.css" defer></script>
-    <script src="/ui.js" defer></script>
-    <script type="module" src="globe.js" defer></script>
-    
-   
+    <link rel="stylesheet" href="./style.css">
+    <title>pls remember</title>
+
 </head>
 
 <body>
-    <div id='pageii'> </div>
-    <p>
-        <label for="event-1"> <input type="checkbox" name="event" value="The Holocaust" id="event-1" />The Holocaust</label>
-    </p>
-    <p>
-        <label for="event-2"> <input type="checkbox" name="event" value="Rwandan Genocide" id="event-2" />Rwandan Genocide</label>
-    </p>
+    <div class="container">
+        <div class="top-canvas">
+            <img class="dagger" src="images\dagger.jpg" />
+            <canvas></canvas>
+            <canvas></canvas>
+            <canvas></canvas>
+            <canvas></canvas>
+        </div>
+        <div class="bottom-canvas">
+            <canvas></canvas>
+            <canvas></canvas>
+            <canvas></canvas>
+            <canvas></canvas>
+            <canvas></canvas>
+        </div>
+    </div>
+
     
+    <div class="words">
+        <div id="initTxt">
+            <h1>welcome</h1>
+        </div>
 
+        <div id="pgii">
+            <p>"The more one analyzes people, the more all reasons for analysis disappear.</p> 
+        </div>
+                
+        <div id="hiddenTxt">
+            <p>Sooner or later one comes to that dreadful universal thing called human nature."</p>
+        </div>
+    </div>    
+                        
+                
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="main.js"></script>
 
-    <div id="globeViz"></div>
-    <style type="globe.css">.scene-container .clickable {cursor: pointer;} </style>
-
-
-
-
+        
 </body>
 
 </html>
+
